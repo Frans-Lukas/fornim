@@ -167,8 +167,26 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* Example of a media query for smaller devices */
+@media (max-width: 600px) {
+  .wrap-text {
+    font-size: 0.9rem; /* Slightly smaller font on small devices */
+  }
+}
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+  .wrap-text {
+    max-width: 95%;
+    font-size: 1.1rem;
+  }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 480px) {
+  .wrap-text {
+    max-width: 100%;
+    font-size: 1rem;
+  }
 }
 
 @media print,
@@ -249,9 +267,8 @@ body {
   color: #ffffff; /* Sets the text color to white */
   font-family: Monaco, 'Trebuchet MS', 'Times New Roman', serif;
   text-align: center; /* Center-align text */
-  min-height: 100vh; /* 100% of the viewport height */
   background: orangered;
-  background: linear-gradient(to bottom, darkmagenta, rebeccapurple, teal) no-repeat;
+  background: linear-gradient(to right, darkmagenta, rebeccapurple, teal);
   background-size: cover;
 }
 
@@ -283,11 +300,15 @@ h2 {
 }
 
 .wrap-text {
-  width: 600px; /* Set the desired width */
-  text-align: center;
-  margin: 80px auto;
-  word-wrap: break-word; /* Ensures words break to prevent overflow */
-  overflow-wrap: break-word; /* The standard name for word-wrap */
+  max-width: 80%; /* Use percentage for fluid width */
+  margin: 0 auto; /* Center the div */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1rem; /* Good default size */
+}
+
+.p-top-margin{
+ margin-top: 50px;
 }
 
 /* Customize links */
