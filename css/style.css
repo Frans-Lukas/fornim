@@ -173,6 +173,7 @@ textarea {
     font-size: 0.9rem; /* Slightly smaller font on small devices */
   }
 }
+
 /* Adjustments for tablets */
 @media (max-width: 768px) {
   .wrap-text {
@@ -268,8 +269,14 @@ body {
   font-family: Monaco, 'Trebuchet MS', 'Times New Roman', serif;
   text-align: center; /* Center-align text */
   background: orangered;
-  background: linear-gradient(to right, darkmagenta, rebeccapurple, teal);
+  background: linear-gradient(to top, darkmagenta, rebeccapurple, teal);
   background-size: cover;
+}
+
+html {
+  height: 100%; /* Ensure the html and body elements take up the full height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 h1, h2, p {
@@ -299,16 +306,20 @@ h2 {
   line-height: 1; /* Ensure the text is centered vertically */
 }
 
+.small-vertical-newline-gap {
+  line-height: 0.4; /* Ensure the text is centered vertically */
+}
+
 .wrap-text {
-  max-width: 80%; /* Use percentage for fluid width */
+  max-width: min(450px, 60vw);
   margin: 0 auto; /* Center the div */
   word-wrap: break-word;
   overflow-wrap: break-word;
   font-size: 1rem; /* Good default size */
 }
 
-.p-top-margin{
- margin-top: 50px;
+.p-top-margin {
+  margin-top: 50px;
 }
 
 /* Customize links */
