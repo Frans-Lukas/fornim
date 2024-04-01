@@ -319,11 +319,6 @@ a {
   font-size: 20px;
 }
 
-p {
-  margin-top: 10px; /* Space above the paragraph */
-  margin-bottom: 10px; /* Space below the paragraph */
-}
-
 
 a:hover {
   text-decoration: underline; /* Underline on hover */
