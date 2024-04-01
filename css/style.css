@@ -268,16 +268,14 @@ body {
   color: #ffffff; /* Sets the text color to white */
   font-family: Monaco, 'Trebuchet MS', 'Times New Roman', serif;
   text-align: center; /* Center-align text */
+
+}
+html {
   background: orangered;
   background: linear-gradient(to top, darkmagenta, rebeccapurple, teal);
   background-size: cover;
 }
 
-html {
-  height: 100%; /* Ensure the html and body elements take up the full height */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-}
 
 h1, h2, p {
   text-align: center; /* Center-align text */
@@ -311,7 +309,7 @@ h2 {
 }
 
 .wrap-text {
-  max-width: min(450px, 60vw);
+  max-width: min(450px, 80vw);
   margin: 0 auto; /* Center the div */
   word-wrap: break-word;
   overflow-wrap: break-word;
