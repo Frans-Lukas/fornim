@@ -24,6 +24,21 @@
 </head>
 
 <body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const gradients = [
+      'linear-gradient(to bottom, red, orange)',
+      'linear-gradient(to bottom, purple, blue)',
+      'linear-gradient(to bottom, darkmagenta, rebeccapurple, teal)',
+      'linear-gradient(to bottom, darkgoldenrod, blueviolet)',
+      'linear-gradient(to bottom, darkseagreen, blueviolet)',
+      'linear-gradient(to bottom, darkseagreen, darkmagenta)',
+    ];
+    const bodyStyle = document.body.style;
+    bodyStyle.backgroundImage = gradients[Math.floor(Math.random() * gradients.length)];
+  });
+</script>
+
 <div class="fornim-border">
   FÖR<br>NIM
 </div>

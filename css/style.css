@@ -270,7 +270,11 @@ body {
   text-align: center; /* Center-align text */
 
   background: orangered;
-  background: linear-gradient(to top, darkmagenta, rebeccapurple, teal);
+  /*background: linear-gradient(to bottom, orangered, darkred);*/
+  /*background: linear-gradient(to bottom, darkblue, blueviolet);*/
+  background: linear-gradient(to bottom, darkgoldenrod, blueviolet);
+  background: linear-gradient(to bottom, darkseagreen, blueviolet);
+  background: linear-gradient(to bottom, darkseagreen, darkmagenta);
   background-size: cover;
 
   min-height: 100vh; /* Ensure body takes at least the full height of the viewport */
