@@ -245,10 +245,14 @@ textarea {
   }
 }
 
-
 body {
-  background: #f0f0f0; /* Light grey background */
-  font-family: 'Arial', sans-serif; /* Change the font */
+  color: #ffffff; /* Sets the text color to white */
+  font-family: Monaco, 'Trebuchet MS', 'Times New Roman', serif;
+  text-align: center; /* Center-align text */
+  min-height: 100vh; /* 100% of the viewport height */
+  background: orangered;
+  background: linear-gradient(to bottom, darkmagenta, rebeccapurple, teal) no-repeat;
+  background-size: cover;
 }
 
 h1, h2, p {
@@ -256,9 +260,9 @@ h1, h2, p {
 }
 
 h2 {
-  font-size: 4em;
-  margin-top: 40px; /* Space above the paragraph */
-  margin-bottom: 40px; /* Space below the paragraph */
+  font-size: 2em;
+  margin-top: 60px; /* Space above the paragraph */
+  margin-bottom: 20px; /* Space below the paragraph */
   /*border: 8px solid white; !* Solid black border *!*/
   /*display: block; !* Use block to take full width and allow margin auto to work *!*/
   /*width: fit-content; !* Make the width as wide as its content *!*/
@@ -271,22 +275,27 @@ h2 {
   display: block; /* Use block to take full width and allow margin auto to work */
   text-align: left; /* Center the text */
   padding: 10px; /* Add some padding around the text */
-  margin: 10px auto; /* Auto margins for horizontal centering */
-  font-size: 8em; /* Adjust font size as needed */
+  /* Auto margins for horizontal centering */
+  margin: 1em auto 10px;
+  font-size: 4em; /* Adjust font size as needed */
   width: fit-content; /* Make the width as wide as its content */
   line-height: 1; /* Ensure the text is centered vertically */
 }
 
-body {
-  background-color: orangered; /* Light gray background */
-  color: #ffffff; /* Sets the text color to white */
-  font-family:Monaco, 'Trebuchet MS', 'Times New Roman', serif;
+.wrap-text {
+  width: 600px; /* Set the desired width */
+  text-align: center;
+  margin: 80px auto;
+  word-wrap: break-word; /* Ensures words break to prevent overflow */
+  overflow-wrap: break-word; /* The standard name for word-wrap */
 }
 
 /* Customize links */
 a {
   color: white; /* Link color */
   text-decoration: none; /* No underline */
+  margin-top: 200px;
+  font-size: 20px;
 }
 
 p {
