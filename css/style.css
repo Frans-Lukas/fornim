@@ -269,11 +269,18 @@ body {
   font-family: Monaco, 'Trebuchet MS', 'Times New Roman', serif;
   text-align: center; /* Center-align text */
 
-}
-html {
   background: orangered;
   background: linear-gradient(to top, darkmagenta, rebeccapurple, teal);
   background-size: cover;
+
+  min-height: 100vh; /* Ensure body takes at least the full height of the viewport */
+  margin: 0; /* Remove default margin */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-attachment: fixed; /* Keep the gradient fixed with respect to the viewport */
+}
+
+html {
+  height: 100%;
 }
 
 
@@ -305,7 +312,7 @@ h2 {
 }
 
 .small-vertical-newline-gap {
-  line-height: 0.4; /* Ensure the text is centered vertically */
+  line-height: 1; /* Ensure the text is centered vertically */
 }
 
 .wrap-text {
